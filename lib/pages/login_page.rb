@@ -14,15 +14,7 @@ class LoginPage
     def click_login_button
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/loginbtn') }.click
     end
-  
-    def get_welcome_text
-      wait.until { @driver.find_element(id: 'com.example.myloginapp:id/welcomeText') }.text
-    end
-  
-    def click_logout_button
-      wait.until { @driver.find_element(id: 'com.example.myloginapp:id/logout') }.click
-    end
-  
+
     def get_error_message
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/warningMessage') }.text
     end
