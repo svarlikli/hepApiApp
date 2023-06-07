@@ -3,30 +3,30 @@ class LoginPage
       @driver = driver
     end
   
-    def enter_username(username)
+    def enterUsername(username)
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/username') }.send_keys(username)
     end
   
-    def enter_password(password)
+    def enterPassword(password)
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/password') }.send_keys(password)
     end
   
-    def click_login_button
+    def clickLoginButton
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/loginbtn') }.click
     end
 
-    def get_error_message
+    def getErrorMessage
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/warningMessage') }.text
     end
 
-    def clear_username_field
-        username_field = wait.until { @driver.find_element(:id, "com.example.myloginapp:id/username")}
-        username_field.clear
+    def clearUsernameField
+        usernameField = wait.until { @driver.find_element(:id, "com.example.myloginapp:id/username")}
+        usernameField.clear
     end
     
-    def clear_password_field
-        password_field = wait.until { @driver.find_element(:id, "com.example.myloginapp:id/password")}
-        password_field.clear
+    def clearPasswordField
+        passwordField = wait.until { @driver.find_element(:id, "com.example.myloginapp:id/password")}
+        passwordField.clear
     end
 
     def wait

@@ -62,9 +62,9 @@ The project has the following structure:
 ├── cucumber.yml
 ├── features
 │   ├── login.feature
-│   ├── step_definitions
-│   │   ├── home_steps.rb
-│   │   └── login_steps.rb
+│   ├── stepDefinitions
+│   │   ├── homeSteps.rb
+│   │   └── loginSteps.rb
 │   └── support
 │       └── env.rb
 ├── Gemfile
@@ -72,8 +72,8 @@ The project has the following structure:
 ├── hepapi-example.apk
 ├── lib
 │   └── pages
-│       ├── home_page.rb
-│       └── login_page.rb
+│       ├── homePage.rb
+│       └── loginPage.rb
 ├── .gitignore
 └── README.md
 ```

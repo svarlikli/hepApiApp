@@ -4,11 +4,11 @@ class HomePage
       @driver = driver
     end
   
-    def get_welcome_text
+    def getWelcomeText
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/welcomeText') }.text
     end
   
-    def click_logout_button
+    def clickLogoutButton
       wait.until { @driver.find_element(id: 'com.example.myloginapp:id/logout') }.click
     end
 
