@@ -1,0 +1,28 @@
+# Ignore bundler config.
+/.bundle/
+
+# Ignore Gemfile.lock.
+Gemfile.lock
+
+# Ignore project dependencies.
+/vendor/
+
+# Ignore generated files.
+/.env
+/.env.*
+/.DS_Store
+
+# Ignore logs.
+/log/
+
+# Ignore coverage reports.
+/coverage/
+
+# Ignore IDE-specific files.
+.idea/
+.vscode/
+
+# Ignore temporary files.
+*.swp
+*.swo
+*~
